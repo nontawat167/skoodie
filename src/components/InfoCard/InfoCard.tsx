@@ -19,6 +19,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ info }) => {
         faculty={info.faculty.name}
         major={info.name}
         university={info.faculty.university.name}
+        logo={info.logo}
       />
       <RoundOpen roundSeats={info.roundSeats} />
       <RoundHeader round={5} type={info?.score?.scoreType} />

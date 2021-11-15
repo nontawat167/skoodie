@@ -7,13 +7,14 @@ type props = {
   faculty: string;
   major: string;
   university: string;
+  logo: string;
 };
 
-const TopPart: React.FC<props> = ({ faculty, major, university }) => {
+const TopPart: React.FC<props> = ({ faculty, major, university, logo }) => {
   return (
     <>
       <div className={styles.container}>
-        <img src={facultyIcon} />
+        <img src={logo} />
 
         <div className={styles.textPart}>
           <div className={styles.faculty}>
