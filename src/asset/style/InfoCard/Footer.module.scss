@@ -1,0 +1,21 @@
+@import "../colors";
+
+.container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+
+  .interest {
+    color: $warm-grey-color;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.25;
+    letter-spacing: normal;
+  }
+
+  .share {
+    font-size: 23px;
+  }
+}

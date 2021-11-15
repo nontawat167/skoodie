@@ -3,12 +3,45 @@
 .container {
   width: 100%;
   display: inline-flex;
-  padding-top: 10px;
+  padding-top: 12px;
+  padding-bottom: 14px;
   align-items: center;
 
   .label {
     font-size: 20px;
-    color: #000000;
+    color: #5f5f5f;
     font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.01;
+    letter-spacing: normal;
+  }
+
+  .rounds {
+    padding-left: 23px;
+    display: inline-flex;
+
+    :not(:last-child) {
+      margin-right: 8px;
+    }
+
+    .round {
+      width: 29px;
+      height: 29px;
+      display: flex;
+      font-size: 18.4px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+    }
+
+    .enable {
+      background-color: $greenish-teal-color;
+    }
+
+    .disable {
+      background-color: $disable-color;
+    }
   }
 }
