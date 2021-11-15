@@ -1,9 +1,10 @@
-
+import RoundOpen from "./components/InfoCard/RoundOpen";
+import InfoCard from "./components/InfoCard/InfoCard";
 
 function App() {
   return (
     <div className="App">
-      <h1>first commit</h1>
+      <InfoCard />
     </div>
   );
 }

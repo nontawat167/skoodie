@@ -1,0 +1,14 @@
+@import "../colors";
+
+.container {
+  width: 100%;
+  display: inline-flex;
+  padding-top: 10px;
+  align-items: center;
+
+  .label {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 300;
+  }
+}

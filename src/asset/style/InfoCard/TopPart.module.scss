@@ -1,0 +1,49 @@
+@import "../colors";
+
+.container {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 10px;
+
+  img {
+    width: 80px;
+    height: 86px;
+    margin-right: 20px;
+  }
+
+  .textPart {
+    height: 86px;
+    .faculty {
+      color: $grapefruit-color;
+      font-size: 24px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.67;
+      letter-spacing: normal;
+    }
+
+    .major {
+      color: $warm-grey-color;
+      font-size: 20px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.8;
+      letter-spacing: normal;
+      margin-top: 8px;
+    }
+
+    .university {
+      color: $warm-grey-color;
+      font-size: 20px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.8;
+      letter-spacing: normal;
+      margin-top: 25px;
+    }
+  }
+}
