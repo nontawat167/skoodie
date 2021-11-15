@@ -1,3 +1,5 @@
-## skoodie
+## Skoodie
+### How to run dev
 
-hi this is skoodie!
+1. run `npm install`
+2. run `npm start`
