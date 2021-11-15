@@ -14,7 +14,6 @@ function App() {
     try {
       const res: AdmissionInfo[] = await tcasAPI.get();
       setData(res);
-      console.log(res);
     } catch (err) {
       console.error(err);
     }
