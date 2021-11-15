@@ -6,16 +6,31 @@ import RoundHeader from "./RoundHeader";
 import RoundOpen from "./RoundOpen";
 import ScorePerportion from "./ScorePerportion";
 import TopPart from "./TopPart";
+import { AdmissionInfo } from "../../types/AdmissionInfo";
 
-const InfoCard = () => {
+type InfoCardProps = {
+  info: AdmissionInfo;
+};
+
+const InfoCard: React.FC<InfoCardProps> = ({ info }) => {
   return (
     <div className={styles.container}>
-      <TopPart />
-      <RoundOpen />
-      <RoundHeader />
-      <RoundDetail />
+      <TopPart
+        faculty={info.faculty.name}
+        major={info.name}
+        university={info.faculty.university.name}
+      />
+      <RoundOpen roundSeats={info.roundSeats} />
+      <RoundHeader round={5} type={info?.score?.scoreType} />
+      <RoundDetail
+        userScore={23453}
+        avg={info.score?.avg}
+        max={info.score?.max}
+        min={info.score?.min}
+        year={info.score?.year}
+      />
       <ScorePerportion />
-      <Footer like={10} />
+      <Footer like={info.likes} />
     </div>
   );
 };

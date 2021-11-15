@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "../../asset/style/InfoCard/RoundOpen.module.scss";
 
-const RoundOpen = () => {
+type RroundOpenProps = {
+  roundSeats: number[];
+};
+
+const RoundOpen: React.FC<RroundOpenProps> = ({ roundSeats }) => {
   return (
     <div className={styles.container}>
       <div className={styles.label}>รอบที่เปิด</div>
       <div className={styles.rounds}>
-        <Round round={1} enable />
-        <Round round={2} enable />
-        <Round round={3} />
-        <Round round={4} enable />
-        <Round round={5} />
+        {roundSeats.map((seat, idx) => (
+          <Round key={idx} round={idx + 1} enable={seat > 0} />
+        ))}
       </div>
     </div>
   );
